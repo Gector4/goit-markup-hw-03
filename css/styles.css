@@ -105,12 +105,14 @@ address {
 .logo{
   margin-right: 93px;
 }
+
+.menu{
+  display: flex;
+}
+
 .menu-item:not(:last-child){
   margin-right: 50px;
   
-}
-.menu{
-  display: flex;
 }
 
   .logo-collor {
@@ -146,13 +148,11 @@ address {
   .navigation .menu-link.link.current {
   color: var(--accent-color);
   }
-  .page-header-mailto{
-    margin-left: auto;
-  }
-  .page-header-phone-number{
-    margin-left: 50px;
-  }
+  
+  .menu-page:not(:last-child){
+    margin-right: 50px;
 
+  }
   .page-header-mailto,
   .page-header-phone-number
   {
@@ -160,11 +160,10 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #757575;
   }
   .page-header-mailto:hover,
-  .page-header-mailto:focus{
-  color: var(--accent-color);
-  }
+  .page-header-mailto:focus,
   .page-header-phone-number:hover,
   .page-header-phone-number:focus{
   color: var(--accent-color);
@@ -172,11 +171,10 @@ address {
   
   /* ======= /HEADER====== */
   
-  /* ======Hero====== */
-  .hero-container{
-    text-align: center;
-    
-  }
+  /* ======Main======  */
+  
+  /* ====== Hero====== */
+  
   .title {
     font-weight: 900;
     font-size: 44px;
@@ -187,6 +185,8 @@ address {
     color: var(--additional-color);
     margin-left:auto;
     margin-right: auto;
+    text-align: center;
+    letter-spacing: 0.06em;
     }
 
   .order-btn{
@@ -202,14 +202,11 @@ address {
   
   .hero-background{
   background-color: var(--background-color-hero-footer);
-  
-  
-
-
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   }
-  .section-portfolio{
-    border: 1px solid var(--solid);
-  }
+
   .buttons-porfolio{
   display: flex;
   justify-content: center;
@@ -258,21 +255,24 @@ address {
   /* ====== /Hero====== */
 
   /* ======Developments====== */
+
   .developments{
     display: flex;
     flex-wrap:wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
   .developments-all{
     margin-left: 30px;
+    margin-bottom: 30px;
     flex-basis: calc((100% - 90px) / 3);
-    
   }
 
   .develop-solid{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
   }
@@ -294,12 +294,8 @@ address {
   background-color: var(--additional-color);
   }
   /* ======/Developments====== */
-  
-  
-  
-  
-  
-  
+    
+    
   /*======Peculiarities======*/
   .list-peculiarities{
     display: flex;
@@ -318,6 +314,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  text-transform: uppercase;
   
   }
   .paragraph-description{
@@ -331,6 +328,9 @@ address {
   
   /* ======Services====== */
   
+  .services{
+    padding-top: 0;
+  }
   .service-list{
   font-weight: var(--primary-text-size);
   font-size: 36px;
@@ -358,7 +358,7 @@ address {
   
   /* ======Team====== */
   .team{
-  background-color: #E5E5E5;
+  background-color: #F5F4FA;
   }
   .our-container{
     display: flex;
@@ -376,6 +376,11 @@ address {
   
   }
 
+  .emplo{
+padding-top: 30px;
+padding-bottom: 30px;
+  }
+
   .our-foto{
     margin-left: 30px;
     background-color: var(--additional-color);
@@ -387,7 +392,6 @@ address {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
   
   }
@@ -397,16 +401,19 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 19px;
+  
   
   }
   
   /* ======/Team====== */
+
+  /* ====== \Main======  */
   
   /*======Address-footer====== */
-  .background-footer{
-  height: 252px;
-  background-color: var(--background-color-hero-footer);
+  .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color-hero-footer);
   }
   .logo-collor-footer{
   font-family: var(--secondary-font-family);
@@ -417,7 +424,6 @@ address {
   color: var(--accent-color);
   }
   .logo-footer-address{
-    padding-top: 60px;
     margin-bottom: 20px;
   }
   .logo-footer{
